@@ -1,17 +1,45 @@
-import { Route, Routes, useNavigate } from "react-router-dom";
-import ProductPage from "./page/ProductPage";
+import { Routes, Route, Link } from "react-router-dom";
+import "./App.css";
+import SuperHeroes from "./components/SuperHeroes";
+import RQSuperHeroes from "./components/RQSuperHeroes";
+import HomePage from "./components/HomePage";
+import RQSuperHero from "./components/RQSuperHero";
+import RQFriends from "./components/RQFriends";
+import ParallelQueries from "./components/ParallelQueries";
+import DynamicParallel from "./components/DynamicParallel";
+import DependantQueries from "./components/DependantQueries";
 
 function App() {
-  const navigate = useNavigate();
   return (
     <div>
       <nav>
-        <button onClick={() => navigate("/")}>home</button>
-        <button onClick={() => navigate("/dummy")}>dummy</button>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/super-heroes">Traditional Super Heroes</Link>
+          </li>
+          <li>
+            <Link to="/rq-super-heroes">RQ Super Heroes</Link>
+          </li>
+        </ul>
       </nav>
       <Routes>
-        <Route path="/" element={<ProductPage />} />
-        <Route path="/dummy" element={<div>Dummy compoennt</div>} />
+        <Route path="/rq-parallel" element={<ParallelQueries />} />
+        <Route
+          path="/rq-dependant"
+          element={<DependantQueries email="shoeb@gmail.com" />}
+        />
+        <Route
+          path="/rq-dynamic-parallel"
+          element={<DynamicParallel heroIds={[1, 2]} />}
+        />
+        <Route path="/super-heroes" element={<SuperHeroes />} />
+        <Route path="/friends" element={<RQFriends />} />
+        <Route path="/rq-super-heroes" element={<RQSuperHeroes />} />
+        <Route path="/rq-super-heroes/:heroId" element={<RQSuperHero />} />
+        <Route path="/" element={<HomePage />} />
       </Routes>
     </div>
   );
