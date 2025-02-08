@@ -1,42 +1,32 @@
 {
   "superheroes": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Spider-Man",
       "alterEgo": "Peter Parker"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Iron Man",
       "alterEgo": "Tony Stark"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Wonder Woman",
       "alterEgo": "Diana Prince"
-    },
-    {
-      "id": 4,
-      "name": "Batman",
-      "alterEgo": "Bruce Wayne"
-    },
-    {
-      "id": 5,
-      "name": "Superman",
-      "alterEgo": "Clark Kent"
     }
   ],
   "friends": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Person One"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Person Two"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Person Three"
     }
   ],
@@ -50,6 +40,48 @@
     {
       "id": "reactdev",
       "courses": ["react", "js", "html"]
+    }
+  ],
+  "colors": [
+    {
+      "id": "1",
+      "label": "Red"
+    },
+    {
+      "id": "2",
+      "label": "Blue"
+    },
+    {
+      "id": "3",
+      "label": "Green"
+    },
+    {
+      "id": "4",
+      "label": "Yellow"
+    },
+    {
+      "id": "5",
+      "label": "Purple"
+    },
+    {
+      "id": "6",
+      "label": "Orange"
+    },
+    {
+      "id": "7",
+      "label": "Pink"
+    },
+    {
+      "id": "8",
+      "label": "Brown"
+    },
+    {
+      "id": "9",
+      "label": "Black"
+    },
+    {
+      "id": "10",
+      "label": "White"
     }
   ]
 }

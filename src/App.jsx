@@ -8,6 +8,8 @@ import RQFriends from "./components/RQFriends";
 import ParallelQueries from "./components/ParallelQueries";
 import DynamicParallel from "./components/DynamicParallel";
 import DependantQueries from "./components/DependantQueries";
+import PaginatedQueries from "./components/PaginatedQueries";
+import InfiniteQueries from "./components/InfiniteQueries";
 
 function App() {
   return (
@@ -27,6 +29,8 @@ function App() {
       </nav>
       <Routes>
         <Route path="/rq-parallel" element={<ParallelQueries />} />
+        <Route path="/rq-infinite" element={<InfiniteQueries />} />
+        <Route path="/rq-paginated" element={<PaginatedQueries />} />
         <Route
           path="/rq-dependant"
           element={<DependantQueries email="shoeb@gmail.com" />}

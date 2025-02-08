@@ -5,11 +5,12 @@ const RQSuperHero = () => {
   const { heroId } = useParams();
 
   const { data } = useFetchSuperHero(heroId);
-  console.log("RQSuperHero data =>", data);
 
   return (
     <div>
-      <h1>{data?.data?.alterEgo}</h1>
+      <h1>
+        {data?.data?.name} - {data?.data?.alterEgo}
+      </h1>
     </div>
   );
 };
